@@ -1,0 +1,6 @@
+[Telegram]
+TOKEN = ваш_токен_бота
+ADMIN_ID = ваш_telegram_id
+
+[Database]
+DB_PATH = database.db
