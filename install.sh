@@ -68,6 +68,12 @@ install_system_package() {
   fi
 }
 
+# Проверка и установка git
+if ! command -v git &>/dev/null; then
+  echo "Git не установлен. Устанавливаем..."
+  install_system_package git
+fi
+
 # Проверка и установка python3
 if ! command -v python3 &>/dev/null; then
   echo "Python 3 не установлен. Устанавливаем..."
